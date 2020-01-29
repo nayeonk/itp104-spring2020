@@ -1,0 +1,132 @@
+  <!doctype html>
+  <html>
+    <head>
+      <title>Pikachu Organized</title>
+      <style>
+        /* Write CSS here */
+        h1 {
+          color: blue;
+          font-size: 60px;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        img {
+          width: 250px;
+        }
+        html, body {
+          background-color: pink;
+          /* Gets rid of default spacing that comes with the browser */
+          margin: 0;
+          padding: 0;
+        }
+        #title {
+          color: red;
+        }
+        .green-text {
+          color: green;
+        }
+        h1 {
+          color: blue;
+        }
+        #header {
+          background-color: yellow;
+          padding-top:50px;
+          padding-bottom: 50px;
+          text-align: center;
+          background-image: url("images/greenpattern.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #about {
+          background-color: skyblue;
+          padding-left: 20px;
+          padding-right: 20px;
+
+          /* Center this div horizontally */
+          margin-left: auto;
+          margin-right: auto;
+
+          width: 600px;
+          /* DONT SET HEIGHTS - no reason to set heights. Divs are smart enough to be as tall as the contents inside it */
+          /*height: 300px;*/
+          padding-bottom: 50px;
+          border-style: dashed;
+          border-color: black;
+          border-width: 10px;
+        }
+        #facts{
+          background-color: lightgreen;
+          width: 800px;
+        }
+        #top3 {
+          background-color: lavender;
+        }
+        /* Create a class called .no-margin and add it to any element we want to override its margin */
+        .no-margin {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .about-img {
+          float: left;
+          margin-right: 10px;
+        }
+        #raichu {
+          float: right;
+          /*width: 170px;*/
+        }
+        .clearfloat {
+          clear: both;
+        }
+        ul {
+          background-color: grey;
+          width: 250px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        
+      </style>
+    </head>
+    <body>
+      <div id="header">
+        <h1 id="title" class="green-text">All About Pikachu</h1>
+      </div>
+
+      <div id="about">
+        <img src="images/pikachu.jpg" alt="An image of pikachu" class="about-img"/>
+
+        <p class="green-text">Pikachu are a species of <strong>Pokemon</strong>,   <em>fictional</em> creatures that appear in an assortment of video games, animated television shows and movies, comic books licensed by The Pokemon Company, a Japanese Corporation.</p>
+
+        <p>Pikachu is a short, chubby rodent Pokémon. It is covered in yellow fur with two horizontal brown stripes on its back. It has a small mouth, long, pointed ears with black tips, brown eyes, and the two red circles on its cheeks contain pouches for electricity storage. It has short forearms with five fingers on each paw, and its feet each have three toes. At the base of its lightning bolt-shaped tail is a patch of brown fur. A female will have a V-shaped notch at the end of its tail, which looks like the top of a heart. It is classified as a quadruped, but it has been known to stand and walk on its hind legs.</p>
+
+        <p class="no-margin">The anime has shown that wild Pikachu live in groups in forested areas. Pikachu communicate amongst themselves using squeaks and tail-shaking as friendly gestures. Electricity can be used to receive and send messages with each other, as well as other Electric Pokémon species. It raises its tail to check its surroundings, and is occasionally struck by lightning in this position. When groups grow, they can inadvertently cause lightning storms. Pikachu is found foraging for berries it roasts with electricity to make them tender enough to eat. A sure sign that Pikachu inhabits a location is patches of burnt grass. It has been observed eating and sometimes destroying telephone poles, wires, and other electronic equipment.</p>
+      </div>
+
+      <div id="facts" >
+        <h2 class="green-text no-margin" >Facts</h2>
+
+        <img src="images/raichu.jpg" alt="An image of raichu" id="raichu"/>
+
+        
+
+        <p>Click <a href="http://www.google.com" target="_blank">me</a> to visit the pokemon site.</p>
+
+        <ul class="no-margin">
+          <li class="green-text">Is yellow</li>
+          <li>Has a thunder shaped tail</li>
+          <li>Can evolve into Raichu</li>
+        </ul>
+
+        <!-- STOP FLOATING HERE! (more continued next week-->
+        <div class="clearfloat"></div>
+      </div>
+
+      <div id="top3">
+        <h2 class="no-margin">Top 3 things Pikachu love</h2>
+        <ol>
+          <li>ketchup</li>
+          <li>Ash</li>
+          <li>other pikachu</li>
+        </ol>
+      </div>
+    </body>
+  </html>
