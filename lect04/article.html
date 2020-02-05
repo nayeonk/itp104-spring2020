@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article</title>
+	<style>
+		html,body {
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			background-color: gray;
+			background-color: pink;
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#header {
+			background-color: red;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 30px;
+			text-align: center;
+			font-weight: bold;
+		}
+		#title {
+			background-color: green;
+			font-size: 44px;
+		}
+		#main {
+			background-color: white;
+			/* 5px border + 10px padding + 570px width + 10px padding + 5px border  */
+			width: 570px;
+			float: left;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 10px;
+			border: 5px solid black;
+		}
+		#sidebar {
+			background-color: pink;
+			width: 200px;
+			float: left;
+			/* Heights kinda work but they end up causing a lot pain so try not use it  */
+			/*height: 686px;*/
+		}
+		#footer {
+			background-color: orange;
+		}
+		.clearfloat {
+			clear: both;
+		}
+		.image1 {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Anytime I think "boxes", create a <div>  -->
+	<!-- Nice to have a big div around everything -->
+	<div id="container">
+
+		<div id="header">
+			Los Angeles Times
+		</div> <!-- end of #header -->
+
+		<div id="title">
+			Chiefs defeat the 49ers in Super Bowl LIV and earn their first title in 50 years
+		</div> <!-- end of #title -->
+
+		<div id="main">
+			<img class="image1" src="article1.jpg" alt="Kansas City Chiefs quarterback Patrck Mahomes"/>
+
+			<p> MIAMI —  So, in their most dire, most crucial moment yet, the Kansas City Chiefs doubled down again on being down by double digits.</p>
+
+			<p>Trailing by 10 points, they scored three touchdowns in the final 6 minutes 13 seconds Sunday to beat the San Francisco 49ers 31-20 in Super Bowl LIV at Hard Rock Stadium.</p>
+
+			<p>In securing the franchise’s second Super Bowl title and first in 50 years, the Chiefs rebounded from at least 10 points down to win each of their three playoff games, something no NFL team ever had done.</p>
+
+			<p>Defensive tackle Frank Clark said he predicted his team’s latest comeback out loud on the field early in the fourth quarter when, he claimed, some of the 49ers already were celebrating.</p>
+			<p>Down 20-10, Kansas City took over at its own 17-yard line with 8:53 to go. Mahomes drove the offense 83 yards in 10 plays </p>
+
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+			<p>The series included a conversion on third and 15 when Mahomes connected with wide receiver Tyreek Hill for 44 yards and another conversion on third and 10 when 49ers safety Tarvarius Moore was called for pass interference</p>
+		</div> <!-- end of #main -->
+
+		<div id="sidebar">
+			Related Articles
+			<ul>
+				<li>Related Article 1</li>
+				<li>Related Article 2</li>
+			</ul>
+		</div> <!-- end of #sidebar -->
+
+		<!-- STOP floating after #sidebar (aka create a new row after sidebar)  -->
+		<div class="clearfloat"></div>
+
+		<div id="footer">
+			USC ITP Webdev 2020.
+		</div> <!-- end of #footer -->
+
+	</div> <!-- end of #container -->
+</body>
+</html>
+
+
+
+
