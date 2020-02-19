@@ -1,0 +1,164 @@
+.clearfloat {
+			clear: both;
+		}
+		body {
+			margin: 0px;
+		}
+		h1 {
+			margin: 0px;
+		}
+		h2 {
+			color: #900;
+			margin-top: 50px;
+		}
+		#header {
+			background-image: url('img/web_dev.jpg');
+			background-size: cover;
+			background-position: center;
+			color: #FFF;
+			font-size: 1.5em;
+			text-align: center;
+			text-shadow: 0px 0px 10px #000;
+			height: 500px;
+			line-height: 500px;
+		}
+		#main {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			padding-bottom: 50px;
+		}
+		#footer {
+			background-color: #777;
+			color: #FFF;
+			text-align: center;
+			height: 50px;
+			line-height: 50px;
+			font-size: 0.8em;
+		}
+
+		/* Program Overview */
+		#usc-logo{
+			width: 200px;
+			height: auto;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 15px;
+		}
+
+		/* Image Gallery */
+		.thumbnail-container {
+			float: left;
+			width: 140px;
+			height: auto;
+			margin: 5px;
+			background-color: orange;
+			/* 80% opaque, 20% transparent*/
+			opacity: 0.8;
+		}
+		/* When .thumbnail-container is hovered, change the opacity of ALL the elements INSIDE .thumbnail-container */
+		.thumbnail-container:hover {
+			/* 100% opaque, 0% transparent */
+			opacity: 1;
+		}
+		/* <p> tag INSIDE .thumbnail-container */
+		.thumbnail-container p {
+			visibility: hidden;
+			/*display: none;*/
+		}
+		/* Look for <p> INSIDE .thumbnail-container */
+		.thumbnail-container:hover p {
+			visibility: visible;
+		}
+		/* All the <img> INSIDE .thumbnail-container -- set a width 100% of its parent */
+		.thumbnail-container img {
+			/* Have the same width as the parent (which is .thumbnail-container) */
+			width: 100%;
+		}
+
+		/* Course Plan */
+		th {
+			border: 1px solid #CCC;
+			padding: 10px 0px;
+			width: 148.75px;
+		}
+		td {
+			border: 1px solid #CCC;
+			padding: 10px 0px;
+			width: 148.75px;
+		}
+		table {
+			border-collapse: collapse;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		/* Contact Form */
+		.form-row {
+			margin: 10px 0px;
+		}
+		.main-label {
+			display: block;
+			width: 200px;
+			float: left;
+		}
+		button {
+			padding: 10px 20px;
+		}
+		#submit-btn {
+			background-color: #900;
+			color: #FFF;
+		}
+
+
+		/* Using compound selectors */
+		#main a {
+			/*background-color: yellow;*/
+		}
+		/* This looks for <a> that is a CHILD of #main, not GRANDCHILD */
+		#main > a {
+			background-color: pink;
+		}
+		/* <a>'s parent is #first-p, #main is the grandparent */
+		#first-p > a {
+			background-color: skyblue;
+			/* By default, <a> has display: inline; */
+			/*display: inline;*/
+			/* widths don't work on inline elements */
+			/*width: 200px;*/
+
+			/* Block elements stay on its own line and can have widths set on them */
+			display: block;
+			width: 200px;
+		}
+		h2:hover {
+			color: blue;
+			background-color: yellow;
+			font-size: 30px;
+			cursor: pointer;
+		}
+
+		#navbar {
+			box-shadow: 0px 2px 5px #ccc;
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#navbar a {
+			text-decoration: none;
+			background-color: pink;
+			/*inline elements dont take width */
+			display: block;
+			width: 150px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			border-bottom: 2px solid #fff;
+			color: black;
+
+			float: left;
+		}
+		#navbar a:hover {
+			border-bottom: 2px solid #900;
+		}
