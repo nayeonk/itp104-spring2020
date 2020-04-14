@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to jQuery</title>
+	<style>
+		body {
+			margin: 0px;
+		}
+		.clearfloat {
+			clear: both;
+		}
+		#main {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.row {
+			display: flex;
+			justify-content: center;
+			margin: 20px 0px;
+		}
+		#bg-button {
+			padding: 10px;
+		}
+		#thumbnails img {
+			width: auto;
+			height: 90px;
+			margin: 10px;
+		}
+		#main-img {
+			max-width: 500px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="main">
+
+		<h1>Intro to jQuery</h1>
+
+		<button id="bg-button">Change Background Color</button>
+
+		<h2 id="highlight">Lorem Ipsum</h2>
+
+		<p>This is a link to <a href="" id="usc-link">USC website</a>.</p>
+
+		<p>Sed sollicitudin sollicitudin diam vel consequat. Aliquam hendrerit ex vitae tempor dapibus. In mattis ante in nisl viverra, quis mollis justo pulvinar. Fusce fermentum, eros in tristique bibendum, est ante ullamcorper urna, volutpat viverra diam enim vitae eros. In turpis est, tempor vitae elit ut, congue ultricies turpis. Donec ultricies non nunc et feugiat. Aliquam erat volutpat. Mauris imperdiet tellus arcu, et dictum quam tempus eu.</p>
+
+		<p>Fusce accumsan venenatis sagittis. Cras laoreet enim nisl, in hendrerit sapien consectetur a. Ut aliquam enim in dui semper finibus. Donec sit amet sapien nec mi accumsan fringilla vel ac nulla. Curabitur vitae velit sit amet risus tincidunt egestas ut a ante. In congue iaculis nulla, in posuere turpis semper at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at risus elit.</p>
+
+		<h2>Image Gallery</h2>
+		
+		<div id="thumbnails" class="row">
+			<img id="blink-img" src="img/blink.gif" alt="blink">
+			<img id="disagree-img" src="img/disagree.gif" alt="disagree">
+			<img id="fight-img" src="img/fight.jpg" alt="fight">
+			<img id="sleepy-img" src="img/sleepy.jpg" alt="sleepy">
+			<img id="unhappy-img" src="img/unhappy.jpg" alt="unhappy">
+		</div> <!-- #thumbnails -->
+
+		<div class="row">
+			<img id="main-img" src="img/disagree.gif" alt="Disagree">
+		</div>
+
+	</div> <!-- #main -->
+
+	<!-- Load in the jQuery code -->
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  	<!-- We can now write our own jQuery or JS code -->
+  	<script>
+  		// I can write JS code here!!!
+
+  		/* 
+  			Multi-line comment
+  			in here
+  		*/
+
+  		//$("h2").css("font-style","italic");
+  		//$("h2").css("color","red");
+  		$("h2").css({
+  			"color":"red",
+  			"font-style": "italic"
+  		});
+
+  		$("body").css("font-family", "Arial");
+
+  		$("#highlight").css("background", "yellow");
+
+
+  		// jQuery can change ANY attribute of any HTML element
+
+  		// For example, add href="" attribute to <a>
+  		$("#usc-link").attr("href", "http://www.usc.edu");
+  		$("#usc-link").attr("target", "_blank");
+
+  		// User events!!!
+  		// When a user CLICKS on #bg-button, change the browser's background color
+  		$("#bg-button").click( function() {
+  			// When user clicks on button, run this function here
+  			$("body").css("background-color", "#AAA");
+  			$("h1").attr("id", "heading");
+
+  			// Can change text
+  			$("#highlight").text("BLAHBLAHH");
+  			// Can change HTML
+  			$("#highlight").html("<del>BLAHBLAHH</del>");
+  		});
+
+  		$("h1").mouseover( function() {
+  			alert("HEYYYYYY");
+  		});
+
+  		// Photo gallery effects
+  		$("#blink-img").click( function() {
+  			// Change the MAIN photo to this photo
+  			$("#main-img").attr("src", "img/blink.gif");
+  			// Change the alt attribute also
+  			$("#main-img").attr("alt", "Kanye blinking")
+  		});
+
+  		$("#disagree-img").click( function() {
+  			$("#main-img").attr("src", "img/disagree.gif");
+  			$("#main-img").attr("alt", "Kanye disagreeing");
+  		});
+
+  		$("#fight-img").click( function() {
+  			$("#main-img").attr("src", "img/fight.jpg");
+  			$("#main-img").attr("alt", "Kanye fighting");
+  		});
+
+  		$("#sleepy-img").click( function() {
+  			$("#main-img").attr("src", "img/sleepy.jpg");
+  			$("#main-img").attr("alt", "Kanye sleeping");
+  		});
+
+  		$("#unhappy-img").click( function() {
+  			$("#main-img").attr("src", "img/unhappy.jpg");
+  			$("#main-img").attr("alt", "Kanye unhappy");
+  		});
+
+
+  	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
